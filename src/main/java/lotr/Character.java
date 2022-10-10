@@ -1,4 +1,5 @@
 package lotr;
+import kick.BasicKick;
 import lombok.AllArgsConstructor;
 import lombok.Setter;
 import lombok.Getter;
@@ -9,6 +10,8 @@ public abstract class Character {
     protected int hp;
     @Getter@Setter
     protected int power;
+
+
     public void setHp(int hp) {
         this.hp = Math.max(hp, 0);
     }
@@ -22,5 +25,6 @@ public abstract class Character {
                 ", power=" + power +
                 '}';
     }
-    public abstract void  kick(Character c);
+
+    public abstract void kick(Character c);
 }

@@ -1,6 +1,7 @@
 package lotr;
+import kick.CryKick;
 
-public class Hobbit extends Character{
+public class Hobbit extends lotr.Character{
 
     public Hobbit() {
         super(3, 0);
