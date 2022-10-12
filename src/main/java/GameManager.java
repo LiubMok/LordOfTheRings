@@ -20,6 +20,10 @@ public class GameManager {
             System.out.println("----------------------------------");
             System.out.println("Both players are Hobbits, they are disabled in fighting");
             return;
+        } else if (car1 instanceof lotr.Elf && car2 instanceof lotr.Elf) {
+            System.out.println("----------------------------------");
+            System.out.println("Both players are Elfs, it is tense draw");
+            return;
         }
         System.out.println("----------------------------------");
         System.out.println("Fight");
