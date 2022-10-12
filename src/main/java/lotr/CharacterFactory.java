@@ -9,7 +9,7 @@ import static org.reflections.scanners.Scanners.SubTypes;
 
 public class CharacterFactory {
     @SneakyThrows
-    public Character createCharacter(){
+    public static Character createCharacter(){
         Reflections reflections = new Reflections("lotr");
 
         Set<Class<?>> subTypes =
